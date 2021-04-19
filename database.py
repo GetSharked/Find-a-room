@@ -12,7 +12,7 @@ class Database:  # Tworzymy klase bazy danych
 
     def create_table(self, sql: str):  # tworzymy funkcje wykonujaca rozne zapytania, podane w parametrze sql
         self.cursor.execute(sql)  # wykonanie
-        self.conn.commit()  # zatwierdzenie
+        self.conn.commit()  #   zatwierdzenie
 
     def insert(self, table, *values):  # Wrzucamy do {table} wszystkie wartosci
         self.cursor.execute(f"INSERT INTO {table} VALUES ({','.join(['?' for _ in values])})", values)

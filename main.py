@@ -6,7 +6,7 @@ load_dotenv()
 
 if len(argv) == 2 and argv[1] == 'setup':  # Tworzymy tabele po wywołaniu polecenia setup
     print('Tworze tabele w bazie danych')
-    db = Database(getenv('DB_NAME'))  # Tworzymy obiekt Database, nazwe przekazujemy poprzez getenv
+    db = Database(getenv('DB_NAME'))  # Tworzymy obiekt  Database, nazwe przekazujemy poprzez getenv
     db.create_table('CREATE TABLE urls (id INTEGER PRIMARY KEY AUTOINCREMENT, category TEXT, url TEXT)')
 
 
