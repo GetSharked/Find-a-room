@@ -24,3 +24,8 @@ class Database:  # Tworzymy klase bazy danych
             f"SELECT * FROM {table} WHERE {' and'.join([f'{condition}=?' for condition in conditions])}",
             list(conditions.values())  # Musi byc inny typ niz dict type
         )
+
+    def fetch_distinct(self, table, column):  # definiujemy metode wyodrebniajaca poszczegulna kolumne z tabeli
+        return self.cursor.execute(
+            f'SELECT DISTINCT {column} FROM {table}'
+        )
