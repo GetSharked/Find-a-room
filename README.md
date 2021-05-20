@@ -9,6 +9,6 @@ SQLITE:
 DISCORD:                                                                                                              
 -Music bot in which u need to add your discord token to .env file, written with discord, youtube_dl, os                      
 ORGANIZER:                                                                                                                                  
--Simple program to practise OOP skills
+-Simple program to practise OOP skills                                                                                                                              
 COPYFILE:                                                                                                                                      
 -Script to automize copying memes from desktop to directoty with shutil and os
