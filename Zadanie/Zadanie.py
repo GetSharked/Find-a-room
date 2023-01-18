@@ -24,7 +24,7 @@ class Waluty:
 
         for x in data[0]['rates']:
             if kod_waluty == x['code']:
-                print(ilosc_waluty*float(x['mid']))
+                return ilosc_waluty*float(x['mid'])
 
     def wskazanie(self, kod_waluty):
         data = requests.get(self.__url)
@@ -32,8 +32,8 @@ class Waluty:
 
         for x in data[0]['rates']:
             if kod_waluty == x['code']:
-                print(x['mid'])
+                return x['mid']
 
 
-
+print(Waluty.wskazanie(Waluty,'EUR'))
 
