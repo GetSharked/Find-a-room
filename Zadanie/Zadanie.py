@@ -35,5 +35,4 @@ class Waluty:
                 return x['mid']
 
 
-print(Waluty.wskazanie(Waluty,'EUR'))
 
